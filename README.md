@@ -13,3 +13,7 @@ pip install -r requirements.txt
 ```
 python server.py
 ```
+### Will be available at
+```
+http://localhost:3000
+```
