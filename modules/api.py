@@ -14,10 +14,6 @@ class api_connection():
         response = requests.get(url=self.base_url+'creations')
         return response.json()
 
-    def search_one_creation(self):
-        response = requests.get(url=self.base_url+f'creations')
-        return response.json()[0]['brick_dict']
-
     def search_creations_by_bricks(self, brick_name):
         response = requests.get(
             url=self.base_url+f'creation_by_bricks/{brick_name}')
