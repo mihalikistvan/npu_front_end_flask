@@ -17,7 +17,7 @@
     {% include 'header.html' %}
     <div class="container container-custom">
       <div class="card mx-auto" style="width: 40rem; margin-top:2em;">
-        <img src={{creation_metadata['file_url']} }="}" class="card-img-top">
+        <img src={{creation_metadata['file_url']}} class="card-img-top">
         <div class="card-body">
           <h5 class="card-title">{{creation_metadata['creation_name']}}</h5>
           <p class="card-text">{{creation_metadata['description']}}</p>
@@ -52,15 +52,15 @@
                 </div>
                 <div class="col">
                   <label for="creativity_range" class="form-label">Creativity:</label>
-                  <input type="range" class="form-range" min="1" max="5" step="1" name="" creativity_range" id=" creativity_range"=" creativity_range""="creativity_range""">
+                  <input type="range" class="form-range" min="1" max="5" step="1" name="creativity_range" id="creativity_range">
                 </div>
               </div>
 
-              <input type=" hidden" id="creation_id" name="creation_id" value="{{creation_metadata['creation_id']}}">
+              <input type="hidden" id="creation_id" name="creation_id" value="{{creation_metadata['creation_id']}}">
               <button type="submit" class="btn btn-primary">Rate</button>
             </form>
           {% else %}
-            <h5 class="card-title">Please login to be able to rate this creation:</h5>
+            <h5 class="card-title">Please login to be able to rate this creation!</h5>
           {% endif %}
 
         </div>
