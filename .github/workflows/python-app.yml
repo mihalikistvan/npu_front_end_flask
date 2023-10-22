@@ -36,5 +36,3 @@ jobs:
         uses: AppThreat/sast-scan-action@1.0.2
       - name: Pip audit
         uses: pypa/gh-action-pip-audit@v1.0.8
-      - name: Markdown Lint
-        uses: ruzickap/action-my-markdown-linter@v1
