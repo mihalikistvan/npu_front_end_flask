@@ -68,7 +68,7 @@ def rating_success():
     if session:
         result = api.add_rating(
                         creation_id=request.form.get('creation_id'),
-                        uniqueness=request.form.get('creativity_range'),
+                        uniqueness=request.form.get('uniqueness_range'),
                         creativity=request.form.get('creativity_range'),
                         rated_by=session.get("user")['userinfo']['email'])
         if result =="Successful rating.":

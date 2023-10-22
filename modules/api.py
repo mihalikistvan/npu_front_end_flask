@@ -27,7 +27,7 @@ class api_connection():
         return response.json()
 
     def search_creation_ratings(self,creation_id):
-        response = requests.get(url=self.base_url+f'/ratings/{creation_id}')
+        response = requests.get(url=self.base_url+f'ratings/{creation_id}')
         return response.json()
 
     def add_rating(self,creation_id,uniqueness,creativity,rated_by):

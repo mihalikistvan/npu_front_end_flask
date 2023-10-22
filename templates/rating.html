@@ -31,7 +31,18 @@
           {{brick}},
           {% endfor %}
         </p>
-      
+        <h5 class="card-title">Current rating on this creation:</h5>
+       
+          <div class="row g-3">
+            <div class="col">
+              <label for="uniqueness_range" class="form-label">Current uniqueness:</label>
+              <input type="text" readonly class="form-control-plaintext"  value="{{ratings_for_creation['uniqueness']}}">
+            </div>
+            <div class="col">
+              <label for="creativity_range" class="form-label">Current creativity:</label>
+              <input type="text" readonly class="form-control-plaintext"  value="{{ratings_for_creation['creativity']}}">
+            </div>
+          </div>
       
 
         {% if session %}
