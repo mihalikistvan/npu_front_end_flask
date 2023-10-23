@@ -33,7 +33,7 @@
           <textarea class="form-control" name="creation_description" id="creation_description" rows="3" required="true"></textarea>
         </div>
 
-        <label for="brick_datalist" class="form-label">Bricks used:</label>
+        <label for="brick_datalist" class="form-label">NPU bricks used:</label>
         <select class="selectpicker form-control" data-live-search="true" multiple="multiple" name="brick_list" id="brick_list">
           {% for row in brick_dict %}
             {% for key, value in row.items() %}
