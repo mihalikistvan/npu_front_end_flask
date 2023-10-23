@@ -15,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
     {% include 'header.html' %}
-    <div class="container container-custom" style="width: 42rem;">
+    <div class="container container-custom" style="max-width: 40em;">
       {% if message == "rating" %}
         <div class="alert alert-success" role="alert">
           Rating successful!
@@ -33,14 +33,14 @@
 
       {% for creation in creations %}
 
-        <div class="card mx-auto" style="width: 40em; margin-top:2em;">
+        <div class="card mx-auto" style="margin-top:2em;">
           <img src={{creation['file_url']}} class="card-img-top">
           <div class="card-body">
             <h5 class="card-title">{{creation['creation_name']}}</h5>
             <p class="card-text">{{creation['description']}}</p>
           </div>
           <div class="card-body">
-            <h5 class="card-title">Bricks used:</h5>
+            <h5 class="card-title">NPU bricks used:</h5>
             <p class="text-muted">
               {% for brick in creation['bricks'] %}
                 {{brick}},
